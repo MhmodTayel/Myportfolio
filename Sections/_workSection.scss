@@ -1,0 +1,34 @@
+.section-work {
+  position: relative;
+}
+.section-work .text-zone {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 50px;
+
+  div:first-child {
+    max-width: 800px;
+  }
+
+  div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 auto;
+  }
+
+  .btn span {
+    background: #08fdd8;
+  }
+}
+
+.fake-big {
+  position: absolute;
+  top: -11rem;
+  left: 20vw;
+  z-index: -1;
+  font-size: 28vw;
+  color: rgba(255, 255, 255, 0.01);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}

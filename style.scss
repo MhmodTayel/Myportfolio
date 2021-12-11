@@ -1,0 +1,20 @@
+@use "./utils/utils";
+@use "./utils/tags";
+@use "./Sections/homeSection";
+@use "./Sections/workSection";
+@use "./Sections/magicwall";
+
+body {
+  background: #1d1d1d;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-zone {
+  padding-left: 5rem;
+}
+
+.container {
+  position: relative;
+}
