@@ -1,5 +1,5 @@
 .magicwall {
-  background-color: rgba($color: #fff, $alpha: 0.1);
+  // background-color: rgba($color: #fff, $alpha: 0.1);
 
   &:before {
     content: "<section>";
@@ -16,12 +16,12 @@
     color: #515152;
     font-size: 1.2rem;
     position: absolute;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-left: 2rem;
   }
 }
 
-.magicwall ul {
+.magicwall-ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -46,11 +46,17 @@
     }
 
     &:hover {
-      .hover-content {
-        background: #fff;
+      .magic-wall_item {
+        .hover-content {
+          opacity: 0;
+        }
       }
       .magic-wall_item {
         transform: scale(1.14);
+      }
+
+      a {
+        opacity: 1;
       }
     }
     .magic-wall_item {
@@ -72,10 +78,25 @@
         text-align: center;
         color: #fff;
         background-color: rgba($color: #000000, $alpha: 0.5);
-        transition: background 0.15s ease-out;
+        transition: 0.8s;
         width: 100%;
         height: 100%;
       }
+    }
+
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      background: url("../imgs/circle.png") no-repeat center;
+      opacity: 0;
+      border-radius: 50%;
+      transition: opacity 0.5s 0.1s;
+      transform: scale(0.7);
     }
   }
 }

@@ -27,8 +27,7 @@ $size: 1.2rem;
   }
 
   &-bottom {
-    bottom: 2rem;
-
+    bottom: -10rem;
     &::before {
       bottom: 3rem;
       content: "</body>";
