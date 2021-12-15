@@ -1,0 +1,47 @@
+.section-contact {
+  margin-top: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  .text-zone {
+    p {
+      width: 90%;
+    }
+  }
+
+  iframe {
+    height: 100vh;
+  }
+  form {
+    margin-top: 20px;
+    li {
+      list-style: none;
+      &.half {
+        width: 49%;
+        float: left;
+        clear: none;
+      }
+      input,
+      textarea {
+        margin: 10px;
+        width: 95%;
+        border: 0;
+        background: #2b2b2b;
+        height: 50px;
+        font-size: 16px;
+        color: #8d8d8d;
+        padding: 20px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        height: 300px;
+        font-family: inherit;
+      }
+    }
+  }
+}

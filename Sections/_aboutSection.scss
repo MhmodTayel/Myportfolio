@@ -3,7 +3,7 @@
 .section-about {
   position: relative;
   max-width: 99vw;
-  margin-top: 180px;
+  margin-top: 120px;
   &::after {
     margin-top: 0;
   }
@@ -28,7 +28,7 @@
     font-size: 1.2rem;
     position: absolute;
     top: 0;
-    left: 2rem;
+    left: 5rem;
   }
   &::after {
     content: "<section/>";
@@ -36,8 +36,8 @@
     color: #515152;
     font-size: 1.2rem;
     position: absolute;
-    margin-top: 4rem;
-    margin-left: 2rem;
+    margin-top: 4.5rem;
+    margin-left: 5rem;
     bottom: -50px;
   }
 }

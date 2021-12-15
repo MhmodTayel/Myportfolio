@@ -163,7 +163,7 @@ a:hover {
   color: #515152;
   position: absolute;
   bottom: 0;
-  left: 4rem;
+  left: 1rem;
   font-style: italic;
   font-size: 1.2rem;
   font-family: "La Belle Aurore";
@@ -256,6 +256,25 @@ p::after {
   bottom: -2rem;
 }
 
+.section-contact .text-zone::before {
+  content: "<form>";
+  font-family: "La Belle Aurore";
+  color: #515152;
+  font-size: 1.2rem;
+  position: absolute;
+  margin-top: -4rem;
+  left: 5rem;
+}
+.section-contact .text-zone::after {
+  content: "<form/>";
+  font-family: "La Belle Aurore";
+  color: #515152;
+  font-size: 1.2rem;
+  position: absolute;
+  margin-top: 1.8rem;
+  margin-left: 0rem;
+}
+
 .section-home {
   height: 90vh;
   overflow: hidden;
@@ -308,7 +327,7 @@ canvas {
   font-size: 1.2rem;
   position: absolute;
   margin-top: -4rem;
-  left: 2rem;
+  left: 5rem;
 }
 .magicwall::after {
   content: "<section/>";
@@ -317,7 +336,7 @@ canvas {
   font-size: 1.2rem;
   position: absolute;
   margin-top: 4rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 
 .magicwall-ul {
@@ -548,7 +567,7 @@ canvas {
 .section-about {
   position: relative;
   max-width: 99vw;
-  margin-top: 180px;
+  margin-top: 120px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -572,7 +591,7 @@ canvas {
   font-size: 1.2rem;
   position: absolute;
   top: 0;
-  left: 2rem;
+  left: 5rem;
 }
 .section-about::after {
   content: "<section/>";
@@ -580,9 +599,53 @@ canvas {
   color: #515152;
   font-size: 1.2rem;
   position: absolute;
-  margin-top: 4rem;
-  margin-left: 2rem;
+  margin-top: 4.5rem;
+  margin-left: 5rem;
   bottom: -50px;
+}
+
+.section-contact {
+  margin-top: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.section-contact .text-zone p {
+  width: 90%;
+}
+.section-contact iframe {
+  height: 100vh;
+}
+.section-contact form {
+  margin-top: 20px;
+}
+.section-contact form li {
+  list-style: none;
+}
+.section-contact form li.half {
+  width: 49%;
+  float: left;
+  clear: none;
+}
+.section-contact form li input,
+.section-contact form li textarea {
+  margin: 10px;
+  width: 95%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-size: 16px;
+  color: #8d8d8d;
+  padding: 20px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.section-contact form li textarea {
+  height: 300px;
+  font-family: inherit;
 }
 
 body {
