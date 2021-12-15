@@ -1,26 +1,27 @@
-// $(document).ready(() => {
-
-// })
-
-// function calc(oprator, result) {
-//   let num1 = 0,
-//     num2 = 0;
-//   if (oprator == "*") {
-//     num1 = 1;
-//     num2 = 1;
-//     num1Arr = [];
-//     for (let i = 1; i <= result; i++) {
-//       if (result % i == 0) num1Arr.push(i);
-//     }
-//     return num1Arr;
-//   }else if (oprator == "+") {
-//     for (let i = 1; i <= result; i++) {
-//       if (result % i == 0) num1Arr.push(i);
-//     }
-//   }
-// }
-
-// console.log(calc("*", 200));
-
-
-
+$(document).ready(() => {
+  $.ajax({
+    url: "https://testimonialapi.toolcarton.com/api",
+    success: function (res) {
+      res.pop();
+      res.forEach((user, idx) => {
+        let { name, avatar, rating, designation, message } = user;
+        $(".section-testimonial").append(
+          `
+          <article class="article">
+            <span class="rating">${rating}</span>
+            <header class="user-info">
+              <img src="${avatar}" alt="" />
+              <div> <h5>${name}</h5>
+              <span> ${designation} </span></div>
+             
+            </header>
+            <div class="text">
+              ${message}
+            </div>
+          </article>
+          `
+        );
+      });
+    },
+  });
+});
