@@ -281,6 +281,24 @@ p::after {
   display: flex;
   align-items: center;
 }
+.section-home .hero {
+  width: 250px;
+  position: relative;
+  transform: translateX(450px);
+}
+.section-home .hero::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(238, 238, 238, 0.13);
+  border-radius: 50%;
+  transform: translate(3px, 40px);
+}
+.section-home .hero img {
+  width: 100%;
+  filter: grayscale(100%);
+}
 
 canvas {
   width: 98vw !important;
