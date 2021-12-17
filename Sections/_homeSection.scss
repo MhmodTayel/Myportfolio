@@ -7,7 +7,9 @@
   .hero {
     width: 250px;
     position: relative;
-    transform: translateX(450px);
+    transform: translateX(1000px);
+    animation: home-hero 3s forwards;
+    animation-delay: 2.5s;
     &::before {
       content: "";
       position: absolute;
@@ -22,8 +24,60 @@
       filter: grayscale(100%);
     }
   }
+
+  .btn {
+    transform: translate(-1000px, 40px);
+    animation: home-btn 3s forwards;
+    animation-delay: 5s;
+  }
 }
 
 canvas {
   width: 98vw !important;
+}
+
+#heroText {
+  img {
+    animation: test 1s;
+    animation-delay: 0.3s;
+    transform-origin: center;
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: rotate(0deg) translate(0px, 17px);
+  }
+  50% {
+    transform: rotate(180deg) translate(0px, 17px);
+  }
+  80% {
+    transform: rotate(420deg) translate(0px, 17px);
+  }
+  100% {
+    transform: rotate(360deg) translate(0px, 17px);
+  }
+}
+@keyframes home-hero {
+  0% {
+    transform: translateX(1000px);
+  }
+  50% {
+    transform: translateX(420px);
+  }
+  100% {
+    transform: translateX(450px);
+  }
+}
+
+@keyframes home-btn {
+  0% {
+    transform: translate(-200px, 40px);
+  }
+  50% {
+    transform: translate(60px, 40px);
+  }
+  100% {
+    transform: translate(30px, 40px);
+  }
 }

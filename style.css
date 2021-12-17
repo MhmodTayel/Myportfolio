@@ -159,6 +159,22 @@ a:hover {
   color: #60cdbc;
 }
 
+a.resume {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  opacity: 0.4;
+  transition: 0.2s;
+  padding: 5px;
+  border-radius: 2px;
+}
+a.resume:hover {
+  opacity: 1;
+  background-color: #64cebe;
+  color: #111;
+}
+
 .tags {
   color: #515152;
   position: absolute;
@@ -284,7 +300,9 @@ p::after {
 .section-home .hero {
   width: 250px;
   position: relative;
-  transform: translateX(450px);
+  transform: translateX(1000px);
+  animation: home-hero 3s forwards;
+  animation-delay: 2.5s;
 }
 .section-home .hero::before {
   content: "";
@@ -299,11 +317,58 @@ p::after {
   width: 100%;
   filter: grayscale(100%);
 }
+.section-home .btn {
+  transform: translate(-1000px, 40px);
+  animation: home-btn 3s forwards;
+  animation-delay: 5s;
+}
 
 canvas {
   width: 98vw !important;
 }
 
+#heroText img {
+  animation: test 1s;
+  animation-delay: 0.3s;
+  transform-origin: center;
+}
+
+@keyframes test {
+  0% {
+    transform: rotate(0deg) translate(0px, 17px);
+  }
+  50% {
+    transform: rotate(180deg) translate(0px, 17px);
+  }
+  80% {
+    transform: rotate(420deg) translate(0px, 17px);
+  }
+  100% {
+    transform: rotate(360deg) translate(0px, 17px);
+  }
+}
+@keyframes home-hero {
+  0% {
+    transform: translateX(1000px);
+  }
+  50% {
+    transform: translateX(420px);
+  }
+  100% {
+    transform: translateX(450px);
+  }
+}
+@keyframes home-btn {
+  0% {
+    transform: translate(-200px, 40px);
+  }
+  50% {
+    transform: translate(60px, 40px);
+  }
+  100% {
+    transform: translate(30px, 40px);
+  }
+}
 .section-work {
   position: relative;
   margin-bottom: 120px;
@@ -462,7 +527,7 @@ canvas {
 
 .hexagon-container {
   position: absolute;
-  transform: scale(2.5);
+  transform: scale(2.5) translateY(-20px);
   border-radius: 50%;
   list-style: none;
 }
@@ -800,6 +865,7 @@ body {
   color: #fff;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .text-zone {

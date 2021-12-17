@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
@@ -14,15 +16,22 @@
     <title>MT | Full Stack Developer | JS Ninja</title>
   </head>
   <body>
+    <a
+      class="resume"
+      href="./imgs/Mahmoud-Tayel-CV.pdf"
+      download="Mahmoud Tayel CV.pdf"
+      ><i class="devicon-devicon-plain"></i> Download Resume</a
+    >
+
     <main class="container">
       <span class="tags tags-top"> &lt;html&gt; <br /> </span>
       <div class="inner-page">
         <section class="section-home">
           <div class="text-zone">
-            <h1>
-              Hi, <br />
+            <h1 id="heroText">
+              <!-- Hi, <br />
               I'm<img src="./imgs/M.png" alt="" />ahmoud, <br />
-              web developer
+              web developer -->
             </h1>
             <p class="gray-text">Full Stack Developer / JavaScript Ninja</p>
             <a href="/contact/" rel="contact" class="btn btn-contact">
@@ -61,7 +70,13 @@
               </p>
             </div>
             <div>
-              <a href="/contact/" rel="contact" class="btn btn-see">
+              <a
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                href="/contact/"
+                rel="contact"
+                class="btn btn-see"
+              >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -73,32 +88,32 @@
         </section>
         <section class="magicwall">
           <ul class="magicwall-ul">
-            <li>
+            <li data-aos="flip-left" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://wordly-mt.netlify.app/" target="_blank"></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-up" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://covid19eg.netlify.app/" target="_blank"></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://clock-app-mt.netlify.app/" target="_blank"></a>
               </div>
             </li>
 
-            <li>
+            <li data-aos="flip-right" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://devjobs-mt.netlify.app/" target="_blank"></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a
@@ -107,7 +122,7 @@
                 ></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-up" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a
@@ -116,26 +131,26 @@
                 ></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-right" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://apple-mt.netlify.app/" target="_blank"></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://toursy-mt.netlify.app/" target="_blank"></a>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-up" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://dice-mt.netlify.app/" target="_blank"></a>
               </div>
             </li>
 
-            <li>
+            <li data-aos="flip-down" data-aos-duration="1000">
               <div class="magic-wall_item lazyloaded">
                 <div class="hover-content"></div>
                 <a href="https://nexter-mt.netlify.app/" target="_blank"></a>
@@ -144,7 +159,7 @@
           </ul>
         </section>
         <section class="section-about">
-          <div class="text-zone">
+          <div class="text-zone" data-aos="fade-right">
             <h2>Me, Myself and I</h2>
             <p>
               Since Adobe Flash was a complete innovation, alongside with CSS
@@ -165,7 +180,7 @@
               <br />
             </p>
           </div>
-          <div class="skills">
+          <div class="skills" data-aos="fade-left">
             <ul class="hexagon-container">
               <li class="hexagon hex_1">
                 <i class="devicon-javascript-plain colored"></i>
@@ -195,7 +210,7 @@
           <div class="fake-big">Testimonials</div>
         </section>
         <section class="section-contact">
-          <div class="text-zone">
+          <div class="text-zone" data-aos="fade-right" data-aos-duration="1000">
             <div class="fake-big">@</div>
             <header>
               <h2>Contact me</h2>
@@ -234,6 +249,8 @@
             </div>
           </div>
           <iframe
+            data-aos="fade-left"
+            data-aos-duration="1000"
             style="-webkit-filter: grayscale(100%); filter: invert(100%)"
             width="1167"
             frameborder="0"
@@ -249,6 +266,8 @@
     </main>
     <script src="./js/jquery-3.1.1.js"></script>
     <script src="./js/Ociliator.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
