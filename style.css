@@ -863,6 +863,12 @@ article:nth-child(10) .rating {
   .section-home .hero {
     display: none;
   }
+}
+@media (max-width: 450px) {
+  .magicwall-ul {
+    grid-template-columns: repeat(1, 1fr);
+    height: 2000px;
+  }
 
   .section-about {
     flex-direction: column;
@@ -877,6 +883,14 @@ article:nth-child(10) .rating {
     transform: scale(2);
   }
 
+  .section-home {
+    margin-bottom: 10px;
+  }
+
+  .section-work .fake-big {
+    top: 0;
+  }
+
   .section-testimonial {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -889,11 +903,24 @@ article:nth-child(10) .rating {
     flex-direction: column;
     width: 0;
   }
-}
-@media (max-width: 450px) {
-  .magicwall-ul {
-    grid-template-columns: repeat(1, 1fr);
-    height: 3000px;
+
+  h1 {
+    transform: translateX(-0.5rem);
+    margin-top: -2rem;
+    font-size: 3.2rem;
+  }
+  h1 img {
+    width: 4.9rem;
+    transform: translate(2px, 11px);
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    transform: translateX(-0.5rem);
+  }
+
+  p {
+    transform: translateX(-0.5rem);
   }
 }
 body {
