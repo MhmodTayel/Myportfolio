@@ -175,6 +175,15 @@ a.resume:hover {
   color: #111;
 }
 
+.progress {
+  height: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #64cebe;
+  z-index: 100;
+}
+
 .tags {
   color: #515152;
   position: absolute;
@@ -522,13 +531,11 @@ canvas {
   width: 160px;
   height: 160px;
   background-color: transparent;
-  border-radius: 50%;
 }
 
 .hexagon-container {
   position: absolute;
   transform: scale(2.5) translateY(-20px);
-  border-radius: 50%;
   list-style: none;
 }
 
@@ -541,9 +548,6 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.hexagon img {
-  width: 70%;
 }
 .hexagon i {
   transform: scale(1.5);
@@ -610,41 +614,6 @@ canvas {
   65% {
     transform: scale(1);
     opacity: 1;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-    clip: rect(0px, 35px, 35px, 0px);
-  }
-  50% {
-    clip: rect(0px, 40px, 40px, 0px);
-  }
-  100% {
-    transform: rotate(360deg);
-    clip: rect(0px, 35px, 35px, 0px);
-  }
-}
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg);
-    clip: rect(0px, 164px, 150px, 0px);
-  }
-  50% {
-    clip: rect(0px, 164px, 0px, 0px);
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(720deg);
-    clip: rect(0px, 164px, 150px, 0px);
-  }
-}
-@keyframes rotate3 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 .section-about {
@@ -874,6 +843,10 @@ body {
 
 .container {
   position: relative;
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
 }
 
 /*# sourceMappingURL=style.css.map */

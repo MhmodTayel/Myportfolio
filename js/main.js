@@ -75,4 +75,11 @@ $(document).ready(() => {
   }
 
   typeWriter(heroTxt, document.getElementById("heroText"));
+
+  const scale = (num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+  };
+  document.addEventListener("scroll", function () {
+    $(".progress").css("width", `${scale(window.scrollY, 0, 3726, 0, 100)}%`);
+  });
 });

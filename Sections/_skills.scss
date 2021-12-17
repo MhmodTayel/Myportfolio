@@ -3,13 +3,11 @@
   width: 160px;
   height: 160px;
   background-color: transparent;
-  border-radius: 50%;
 }
 
 .hexagon-container {
   position: absolute;
   transform: scale(2.5) translateY(-20px);
-  border-radius: 50%;
   list-style: none;
 }
 
@@ -24,10 +22,6 @@
   justify-content: center;
   align-items: center;
 
-  img {
-    width: 70%;
-  }
-
   i {
     transform: scale(1.5);
   }
@@ -36,12 +30,11 @@
 @each $index, $top, $left in (1, 0px, 0px), (2, 0px, 42px), (3, 36px, 63px),
   (4, 72px, 42px), (5, 72px, 0px), (6, 36px, -21px), (7, 36px, 21px)
 {
-  $time: 3s; // thx to @zeakd for this formula
+  $time: 3s;
   $delay: $time / 14;
   .hexagon.hex_#{$index} {
     top: $top;
     left: $left;
-    //cubic-bezier(.155,1.105,.295,1.12)
     animation: Animasearch $time ease-in-out infinite;
     animation-delay: $delay * $index;
   }
@@ -60,43 +53,5 @@
   65% {
     transform: scale(1);
     opacity: 1;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-    clip: rect(0px, 35px, 35px, 0px);
-  }
-  50% {
-    clip: rect(0px, 40px, 40px, 0px);
-  }
-  100% {
-    transform: rotate(360deg);
-    clip: rect(0px, 35px, 35px, 0px);
-  }
-}
-
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg);
-    clip: rect(0px, 164px, 150px, 0px);
-  }
-  50% {
-    clip: rect(0px, 164px, 0px, 0px);
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(720deg);
-    clip: rect(0px, 164px, 150px, 0px);
-  }
-}
-
-@keyframes rotate3 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
