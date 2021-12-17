@@ -397,9 +397,6 @@ canvas {
   justify-content: flex-end;
   flex: 1 0 auto;
 }
-.section-work .text-zone .btn span {
-  background: #08fdd8;
-}
 
 .fake-big {
   position: absolute;
@@ -865,6 +862,27 @@ article:nth-child(10) .rating {
   }
   .section-home .hero {
     display: none;
+  }
+
+  .section-about {
+    flex-direction: column;
+  }
+  .section-about .text-zone {
+    width: 100%;
+  }
+  .section-about .skills {
+    margin-top: 60px;
+  }
+  .section-about .skills .hexagon-container {
+    transform: scale(2);
+  }
+
+  .section-testimonial {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .section-testimonial .fake-big {
+    top: -5rem;
   }
 
   .section-contact {

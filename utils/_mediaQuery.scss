@@ -34,6 +34,33 @@
     }
   }
 
+  .section-about {
+    flex-direction: column;
+    .text-zone {
+      width: 100%;
+    }
+
+    .section-work {
+  
+    }
+
+    .skills {
+      margin-top: 60px;
+      .hexagon-container {
+        transform: scale(2);
+      }
+    }
+  }
+
+  .section-testimonial {
+    grid-template-columns: 1fr;
+    padding: 10px;
+
+    .fake-big {
+      top: -5rem;
+    }
+  }
+
   .section-contact {
     flex-direction: column;
     width: 0;
