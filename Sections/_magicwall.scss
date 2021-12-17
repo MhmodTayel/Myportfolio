@@ -22,15 +22,13 @@
 }
 
 .magicwall-ul {
-  padding: 0;
+  padding: 20px;
   margin: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   height: 555px;
-
   li {
-    width: 20%;
     position: relative;
     overflow: hidden;
     @for $i from 1 through 10 {
@@ -99,4 +97,7 @@
       transform: scale(0.7);
     }
   }
+}
+
+@media (max-width: 700px) {
 }

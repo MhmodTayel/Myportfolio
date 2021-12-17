@@ -4,7 +4,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
   .text-zone {
     p {
       width: 90%;
@@ -13,10 +15,12 @@
 
   iframe {
     height: 100vh;
-    
+    overflow-x: hidden;
   }
   form {
+    height: 100vh;
     margin-top: 20px;
+    margin-bottom: -70px;
     li {
       list-style: none;
       &.half {
