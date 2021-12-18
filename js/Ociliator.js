@@ -312,7 +312,7 @@ function initOciliator(remove) {
     })();
 
     ctx = document.getElementById("canvas").getContext("2d");
- 
+
     ctx.running = true;
     ctx.frame = 1;
 
@@ -344,3 +344,5 @@ function initOciliator(remove) {
 }
 
 initOciliator();
+
+

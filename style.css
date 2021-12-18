@@ -90,6 +90,91 @@
   transition: transform 0.5s 0.5s;
 }
 
+.circle {
+  z-index: 1000;
+}
+.circle ul {
+  z-index: 1000;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.circle ul:hover {
+  opacity: 1;
+}
+.circle ul.changed::before {
+  content: "\f00d";
+}
+.circle ul::before {
+  content: "\f1e0";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff00ff, #8a2be2);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 2px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.circle ul li {
+  position: absolute;
+  list-style: none;
+  transition: 1s;
+}
+.circle ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  margin: 0 2px;
+  border-radius: 50%;
+  font-size: 25px;
+  transition: 1s;
+}
+.circle ul li:nth-child(1) a {
+  background: #1877f2;
+}
+.circle ul li:nth-child(2) a {
+  background: #1da1f2;
+}
+.circle ul li:nth-child(3) a {
+  background: #111;
+}
+.circle ul li:nth-child(4) a {
+  background: #007bb5;
+}
+.circle ul.clicked li:nth-child(1) a {
+  transform: translateX(44px) rotate(360deg);
+  transition-delay: 0.8s;
+}
+.circle ul.clicked li:nth-child(2) a {
+  transform: translateX(88px) rotate(360deg);
+  transition-delay: 0.6s;
+}
+.circle ul.clicked li:nth-child(3) a {
+  transform: translateX(132px) rotate(360deg);
+  transition-delay: 0.4s;
+}
+.circle ul.clicked li:nth-child(4) a {
+  transform: translateX(176px) rotate(360deg);
+  transition-delay: 0.2s;
+}
+
 .section-full {
   min-height: 100vh;
   padding: 9rem 3rem;

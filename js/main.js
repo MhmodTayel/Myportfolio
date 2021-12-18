@@ -83,4 +83,12 @@ $(document).ready(() => {
   document.addEventListener("scroll", function () {
     $(".progress").css("width", `${scale(window.scrollY, 0, 3726, 0, 100)}%`);
   });
+
+  $(".circle").click(function () {
+    $(".circle ul").toggleClass("clicked changed");
+  });
+
+  $(".container").click(function () {
+    $(".circle ul").removeClass("clicked");
+  });
 });
