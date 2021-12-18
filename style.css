@@ -1044,23 +1044,75 @@ article:nth-child(10) .rating {
   }
 
   .section-testimonial {
-    margin-top: 223px;
+    padding-top: 223px;
+    margin-top: 0;
+  }
+  .section-testimonial .fake-big {
+    top: 12rem;
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    transform: translateX(1.2rem);
   }
 
   .section-work {
     height: 300px;
   }
 
-  .container {
+  .section-home,
+.section-work,
+.magicwall,
+.section-testimonial,
+.section-contact {
     overflow-x: hidden;
+  }
+
+  .section-about {
+    justify-content: center;
+    align-items: center;
+    max-width: 88vw;
+  }
+  .section-about .skills {
+    transform: translateX(20px) !important;
+  }
+  .section-about p {
+    transform: translateX(1rem);
   }
 
   canvas {
     display: none;
+  }
+
+  .section-contact {
+    margin-top: 20px;
+  }
+  .section-contact .text-zone {
+    padding-left: 2rem;
+  }
+  .section-contact .text-zone::before {
+    margin-top: 18rem;
+    left: 1rem;
+  }
+  .section-contact .text-zone::after {
+    margin-top: -2rem;
+    left: 3.2rem;
+  }
+  .section-contact iframe {
+    display: none;
+  }
+  .section-contact form {
+    transform: translateX(-37px);
+    margin-top: 50px;
+    margin-bottom: -17rem;
+    padding-bottom: 30px;
+  }
+  .section-contact form ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-contact form ul li.half {
+    width: 100%;
   }
 }
 body {

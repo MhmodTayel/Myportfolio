@@ -135,22 +135,79 @@
   }
 
   .section-testimonial {
-    margin-top: 223px;
+    padding-top: 223px;
+    margin-top: 0;
+    .fake-big {
+      top: 12rem;
+    }
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    transform: translateX(1.2rem);
   }
 
   .section-work {
     height: 300px;
   }
 
-  .container {
+  .section-home,
+  .section-work,
+  .magicwall,
+  .section-testimonial,
+  .section-contact {
     overflow-x: hidden;
+  }
+
+  .section-about {
+    justify-content: center;
+    align-items: center;
+    max-width: 88vw;
+    .skills {
+      transform: translateX(20px) !important;
+    }
+    p {
+      transform: translateX(1rem);
+    }
   }
 
   canvas {
     display: none;
+  }
+
+  .section-contact {
+    margin-top: 20px;
+    .text-zone {
+      padding-left: 2rem;
+      &::before {
+        margin-top: 18rem;
+        left: 1rem;
+      }
+      &::after {
+        margin-top: -2rem;
+        left: 3.2rem;
+      }
+    }
+
+    iframe {
+      display: none;
+    }
+
+    form {
+      transform: translateX(-37px);
+      margin-top: 50px;
+      margin-bottom: -17rem;
+      padding-bottom: 30px;
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          &.half {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
