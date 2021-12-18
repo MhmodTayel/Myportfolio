@@ -986,7 +986,6 @@ article:nth-child(10) .rating {
 
   .section-contact {
     flex-direction: column;
-    width: 0;
   }
 
   h1 {
@@ -1041,7 +1040,7 @@ article:nth-child(10) .rating {
     bottom: -12rem;
   }
   .section-about p {
-    max-width: 90%;
+    max-width: 85%;
   }
 
   .section-testimonial {
@@ -1052,7 +1051,15 @@ article:nth-child(10) .rating {
     font-size: 2.8rem;
   }
 
-  .section-contact {
+  .section-work {
+    height: 300px;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  canvas {
     display: none;
   }
 }

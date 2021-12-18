@@ -74,7 +74,6 @@
 
   .section-contact {
     flex-direction: column;
-    width: 0;
   }
 
   h1 {
@@ -131,7 +130,7 @@
       bottom: -12rem;
     }
     p {
-      max-width: 90%;
+      max-width: 85%;
     }
   }
 
@@ -143,7 +142,15 @@
     font-size: 2.8rem;
   }
 
-  .section-contact {
+  .section-work {
+    height: 300px;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  canvas {
     display: none;
   }
 }
