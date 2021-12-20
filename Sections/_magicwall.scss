@@ -22,12 +22,12 @@
 }
 
 .magicwall-ul {
-  padding: 20px;
+  padding: 0 80px;
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  height: 555px;
+  grid-template-columns: repeat(2, 1fr);
+  height: 1500px;
   li {
     position: relative;
     overflow: hidden;
@@ -36,7 +36,9 @@
         background-image: url("./imgs/#{$i}.png");
       }
     }
-
+    &:nth-child(1) .magic-wall_item {
+      background-position: top;
+    }
     &:after {
       content: "";
       display: block;

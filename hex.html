@@ -88,11 +88,32 @@
       .hexagon.hex_7 {
         top: 36px;
         left: 21px;
-        animation: Animasearch 3s ease-in-out infinite;
-        animation-delay: 1.5s;
+
+        /* animation-delay: 1.5s; */
+
+        transition: 0.5s;
+        transform-origin: center;
       }
 
-      @keyframes Animasearch {
+      .hexagon.hex_7:hover {
+        animation: anime 1s;
+      }
+
+      @keyframes anime {
+        0% {
+          transform: rotateY(0deg) translateY(0px);
+        }
+
+        50% {
+          transform: rotateY(180deg) translateY(-10px);
+        }
+
+        100% {
+          transform: rotateY(360deg) translateY(0px);
+        }
+      }
+
+      /* @keyframes Animasearch {
         0% {
           transform: scale(1);
           opacity: 1;
@@ -106,31 +127,13 @@
           transform: scale(1);
           opacity: 1;
         }
-      }
+      } */
     </style>
     <title>hex</title>
   </head>
   <body>
     <div class="skills">
       <ul class="hexagon-container">
-        <li class="hexagon hex_1">
-          <i class="devicon-javascript-plain colored"></i>
-        </li>
-        <li class="hexagon hex_2">
-          <i class="devicon-sass-original colored"></i>
-        </li>
-        <li class="hexagon hex_3">
-          <i class="devicon-express-original-wordmark"></i>
-        </li>
-        <li class="hexagon hex_4">
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-        </li>
-        <li class="hexagon hex_5">
-          <i class="devicon-nodejs-plain-wordmark colored"></i>
-        </li>
-        <li class="hexagon hex_6">
-          <i class="devicon-react-original-wordmark colored"></i>
-        </li>
         <li class="hexagon hex_7">
           <i class="devicon-angularjs-plain colored"></i>
         </li>

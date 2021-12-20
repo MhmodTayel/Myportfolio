@@ -514,12 +514,12 @@ canvas {
 }
 
 .magicwall-ul {
-  padding: 20px;
+  padding: 0 80px;
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  height: 555px;
+  grid-template-columns: repeat(2, 1fr);
+  height: 1500px;
 }
 .magicwall-ul li {
   position: relative;
@@ -554,6 +554,9 @@ canvas {
 }
 .magicwall-ul li:nth-child(10) .magic-wall_item {
   background-image: url("./imgs/10.png");
+}
+.magicwall-ul li:nth-child(1) .magic-wall_item {
+  background-position: top;
 }
 .magicwall-ul li:after {
   content: "";
